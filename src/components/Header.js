@@ -7,7 +7,7 @@ const Header = () => {
         <a href='#'>
           <img src={Logo} alt='heya'/>
         </a>
-        <button className='btn btn-sm'></button>
+        <button className='btn btn-sm'>WORK IN PROGRESS: Nota: todavía sigo encontrando los archivos</button>
       </div>
     </div>
   </header>;
