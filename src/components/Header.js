@@ -1,16 +1,19 @@
 import React from 'react';
-import Logo from '../assets/logo.svg';
+import { ReactComponent as Logo } from '../assets/logo.svg';
+
 const Header = () => {
-  return <header className='py-8'>
-    <div className='container mx-auto'>
-      <div>
-        <a href='#'>
-          <img src={Logo} alt='heya'/>
-        </a>
-        <button className='btn btn-sm'>WORK IN PROGRESS: Nota: todavía sigo encontrando los archivos</button>
+  return (
+    <header className='py-8'>
+      <div className='container mx-auto'>
+        <div className='flex justify-between items-center'>
+          <a href='#'>
+            <Logo alt='heya' />
+          </a>
+          <button className='btn btn-sm'>Trabaja conmigo!</button>
+        </div>
       </div>
-    </div>
-  </header>;
+    </header>
+  );
 };
 
 export default Header;

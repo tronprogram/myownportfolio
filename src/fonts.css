@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("../src/assets/tron.woff2") format("woff2"),
+    url("../src/assets/tron.woff") format("woff");
+  font-display: swap;
+}
