@@ -8,7 +8,7 @@ import { fadeIn } from '../variants.js';
 const Banner = () => {
   return (
     <section className="min-h-[65vh] lg:min-h-[78vh] flex items-center" id="home">
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
           <div className='flex-1 text-center font-secondary lg:text-left'>
             <motion.h1 variants={fadeIn('up', 0.3)} initial="hidden" whileInView={'show'} viewport={{once: false, amount:0.7}} className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
@@ -19,7 +19,7 @@ const Banner = () => {
               <TypeAnimation sequence={[
                 'Desarrollador',
                 1000,
-                'Gamer',
+                'Diseñador',
                 1000,
                 'Estudiante',
                 1000,
@@ -48,9 +48,9 @@ const Banner = () => {
               </a>
             </div>
           </div>
-          <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[428px]'>
+          <motion.div variants={fadeIn('down', 0.5)} initial="hidden" whileInView={'show'} className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[428px]'>
             <img src={avatarImage} alt="Avatar" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
