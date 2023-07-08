@@ -36,19 +36,19 @@ const About = () => {
             <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
               <div className='flex items-center gap-1'>
                 <div className='text-4xl font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={2} duration={5} /> : null}+
+                  {inView ? <CountUp start={0} end={2} duration={0} /> : null}+
                 </div><br></br>
                 <div className='font-primary text-base tracking-[2px]'>años de <br/>Experiencia</div>
               </div>
               <div className='flex items-center gap-1'>
                 <div className='text-4xl font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={10} duration={5} /> : null}+
+                  {inView ? <CountUp start={0} end={10} duration={0} /> : null}+
                 </div> <br></br>
                 <div className='font-primary text-base tracking-[2px]'> <br></br> Proyectos Realizados</div>
               </div>
               <div className='flex items-center gap-1'>
                 <div className='text-4xl font-tertiary text-gradient mb-2'>
-                  {inView ? <CountUp start={0} end={30} duration={5} /> : null}+
+                  {inView ? <CountUp start={0} end={30} duration={0} /> : null}+
                 </div> <br></br>
                 <div className='font-primary text-base tracking-[2px]'>Clientes <br></br> Satisfechos</div>
               </div>
