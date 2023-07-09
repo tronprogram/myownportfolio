@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReactComponent as Logo } from '../assets/logo.svg';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -9,7 +10,11 @@ const Header = () => {
           <a href='#'>
             <Logo alt='heya' />
           </a>
-          <button className='btn btn-sm'>Trabaja conmigo!</button>
+          <button className='btn btn-sm'>
+            <Link to="contact" smooth={true} duration={800}>
+              Trabaja conmigo!
+            </Link>
+          </button>
         </div>
       </div>
     </header>

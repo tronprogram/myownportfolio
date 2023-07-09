@@ -4,6 +4,7 @@ import CountUp from 'react-countup';
 import { fadeIn } from '../variants';
 import { useInView } from 'react-intersection-observer';
 import avatarImage from '../assets/about.png';
+import { Link } from 'react-scroll';
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -54,8 +55,16 @@ const About = () => {
               </div>
             </div>
             <div className='my-4 flex gap-x-14 items-center'>
-              <button className='btn btn-lg'>Contáctame</button>
-              <a href='#' className='text-gradient btn-link'>Mi Portafolio</a>
+              <button className='btn btn-lg'>
+                <Link to="contact" smooth={true} duration={800}>
+                  Contáctame
+                </Link>
+              </button>
+              <a href='#' className='text-gradient btn-link'>
+                <Link to="work" smooth={true} duration={800}>
+                  Mi Portafolio
+                </Link>
+              </a>
             </div>
           </motion.div>
         </div>
